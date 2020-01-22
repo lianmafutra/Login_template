@@ -9,7 +9,6 @@ public class MyToastShow {
     public MyToastShow(Context ctx) {
         this.ctx = ctx;
     }
-
     public void show(String message) {
         Toast.makeText(ctx, message, Toast.LENGTH_LONG).show();
     }

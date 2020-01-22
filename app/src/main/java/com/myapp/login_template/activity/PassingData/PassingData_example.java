@@ -12,6 +12,8 @@ import com.myapp.login_template.model.ModelParcelable_example;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import static com.myapp.login_template.activity.PassingData.ShowData_example.KEY_DATA;
+
 public class PassingData_example extends AppCompatActivity {
 
     ModelParcelable_example model ;
@@ -45,7 +47,7 @@ public class PassingData_example extends AppCompatActivity {
                 break;
             case R.id.btn_parcelable:
                 Intent i = new Intent(this, ShowData_example.class);
-                i.putExtra("key_data", model);
+                i.putExtra(KEY_DATA, model);
                 startActivity(i);
                 break;
         }

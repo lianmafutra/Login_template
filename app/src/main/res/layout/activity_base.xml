@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".activity.BaseActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <Button
         android:id="@+id/btn_passing_data"
         android:layout_width="0dp"
@@ -28,4 +39,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_passing_data"
         app:layout_constraintStart_toStartOf="@+id/btn_passing_data"
         app:layout_constraintTop_toBottomOf="@+id/btn_passing_data" />
+
+    <Button
+        android:id="@+id/btn_button_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Button Style"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login_activity"
+        app:layout_constraintStart_toStartOf="@+id/btn_login_activity"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_activity" />
 </androidx.constraintlayout.widget.ConstraintLayout>

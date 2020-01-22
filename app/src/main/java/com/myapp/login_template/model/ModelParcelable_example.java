@@ -3,11 +3,14 @@ package com.myapp.login_template.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
+
 public class ModelParcelable_example implements Parcelable {
     String nama;
     String hobi;
     String alamat;
     String agama;
+    
 
     public String getNama() {
         return nama;
