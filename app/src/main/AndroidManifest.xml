@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myapp.login_template">
 
-    <!--Permissions-->
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,8 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.list_example"></activity>
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.LoginActivity.LoginActivity"></activity>
+        <activity android:name=".activity.PassingData.ShowData_example" />
+        <activity android:name=".activity.PassingData.PassingData_example" />
+        <activity android:name=".activity.ListActivity.List_example" />
+        <activity android:name=".activity.BaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,5 +22,9 @@
             </intent-filter>
         </activity>
     </application>
+
+    <!--    Permissions-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
 </manifest>

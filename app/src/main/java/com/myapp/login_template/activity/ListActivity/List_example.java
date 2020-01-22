@@ -1,4 +1,4 @@
-package com.myapp.login_template.activity;
+package com.myapp.login_template.activity.ListActivity;
 
 import android.os.Bundle;
 import android.widget.ProgressBar;
@@ -16,7 +16,7 @@ import com.myapp.login_template.utils.MyToastShow;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class list_example extends AppCompatActivity {
+public class List_example extends AppCompatActivity {
 
     @BindView(R.id.progressBar_example)
     ProgressBar progressBarExample;
@@ -34,7 +34,6 @@ public class list_example extends AppCompatActivity {
         setContentView(R.layout.activity_list_example);
         ButterKnife.bind(this);
         alertDialog = new MyAlertDialog(this);
-
         alertDialog.showDialog(MyAlertDialog.GAGAL);
     }
 }

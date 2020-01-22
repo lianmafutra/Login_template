@@ -1,4 +1,4 @@
-package com.myapp.login_template.activity;
+package com.myapp.login_template.activity.LoginActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,17 +14,17 @@ import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import com.myapp.login_template.R;
+import com.myapp.login_template.activity.ListActivity.List_example;
 import com.myapp.login_template.utils.MyToastShow;
-
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity implements Validator.ValidationListener {
+public class LoginActivity extends AppCompatActivity implements Validator.ValidationListener {
 
-    Context ctx = MainActivity.this;
+    Context ctx = LoginActivity.this;
 
     @NotEmpty
     @BindView(R.id.et_username)
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity implements Validator.Validat
     @Override
     public void onValidationSucceeded() {
         toast.show("Login Succes");
-
-        startActivity(new Intent(this, list_example.class));
+//        Toast.makeText(LoginActivity.this, "Login Succes", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, List_example.class));
     }
 
     @Override
